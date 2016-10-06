@@ -1,0 +1,14 @@
+<div class="joli">
+    <div class="logo">
+        <img src="{{menu.joli.img}}" alt="{{menu.joli.alt}}" />
+    </div>
+    <div class="version">
+        <span>{{menu.joli.version}}</span>
+    </div>
+</div>
+<nav>
+    <ul>
+        {{#menu.nav_items}}<li><a href="{{link}}">{{id}}</a></li>{{/menu.nav_items}}
+    </ul>
+    <div class="active-square"></div>
+</nav>

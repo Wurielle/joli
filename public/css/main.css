@@ -845,58 +845,219 @@ there.
 * {
   box-sizing: border-box;
 }
-body {
-  background-color: #212121;
-  color: #fff;
-}
-section#homepage {
-  width: 100%;
+div#menu {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
   height: 100vh;
 }
-section#homepage h1,
-section#homepage h2,
-section#homepage h3,
-section#homepage h4,
-section#homepage h5,
-section#homepage h6,
-section#homepage p {
-  line-height: 1;
-  margin-bottom: 25px;
-  text-align: center;
+div#menu .joli {
+  height: 300px;
+  width: 150px;
+  display: inline-block;
+  font-size: 0;
+}
+div#menu .joli .logo,
+div#menu .joli .version {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+div#menu .joli .version {
+  background-color: #222;
+}
+div#menu .joli .version span {
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+div#menu nav {
+  width: 150px;
+  height: calc(100% - 300px);
+  border-right: 1px solid #dbdbdb;
+  padding-top: 30px;
+  position: relative;
+}
+div#menu nav li {
+  padding-left: 29px;
+  list-style: none;
+  margin: 0;
+}
+div#menu nav li a {
+  padding: 6px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #222;
+  line-height: 28px;
+  vertical-align: text-top;
+  -webkit-transition: color 400ms;
+  -moz-transition: color 400ms;
+  -ms-transition: color 400ms;
+  -o-transition: color 400ms;
+  transition: color 400ms;
+  -webkit-transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-section#homepage a {
-  margin: 0;
-  color: #bbb;
+div#menu nav li a.active,
+div#menu nav li a:hover {
+  color: #ffd3e2;
 }
-section#homepage a:hover {
-  color: #888;
+div#menu nav .active-square {
+  width: 2px;
+  height: 30px;
+  background-color: #ffd3e2;
+  position: absolute;
+  top: 30px;
+  right: -1px;
 }
-section#homepage:before {
+div#content {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 450px);
+  margin-left: 150px;
+}
+div#content #player {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 150px;
+  width: calc(100% - 450px);
+  max-height: 300px;
+  min-height: 75px;
+  height: 300px;
+  background-color: #222;
+  font-size: 0;
+}
+div#content #player .cover {
+  position: relative;
+  max-width: 300px;
+  min-width: 75px;
+  max-height: 300px;
+  height: 100%;
+  width: 300px;
+  display: inline-block;
+}
+div#content #player .cover .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 300px;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+div#content #player .player {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 300px);
+  max-height: 300px;
+  height: 100%;
+}
+div#content #player .player .player-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-image: url(/public/images/export/dot.png);
+  opacity: 0.5;
+}
+div#content #player .player .player-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+div#content #content-container {
+  padding: 30px;
+  margin-top: 300px;
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+}
+div#content #content-container #track-container {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+div#content #content-container #track-container .item {
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+  font-size: 0;
+  margin-bottom: 30px;
+}
+div#content #content-container #track-container .item .cover {
+  background-color: #222;
+  position: relative;
+  height: 120px;
+  width: 120px;
+  margin-right: 30px;
+  display: inline-block;
+}
+div#content #content-container #track-container .item .cover .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+div#content #content-container #track-container .item .player {
+  background-color: #222;
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 150px);
+  height: 100%;
+}
+div#content #content-container #track-container .item .player .player-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-image: url(/public/images/export/dot.png);
+  opacity: 0.5;
+}
+div#content #content-container #track-container .item .player .player-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+div#side {
+  display: inline-block;
+  position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  position: absolute;
-  opacity: 0.8;
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-  background-position: 50% 50%;
-  background-size: cover;
+  width: 300px;
+  height: 100vh;
+  background-color: #222;
 }
-section#homepage .container {
+div#app {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  font-size: 0;
+  min-width: 450px;
+  width: 100%;
 }
-section#homepage .column {
-  text-align: center;
+div#app * {
+  font-size: 10px;
 }
 /*********************/
 /***** MOBILE ****/

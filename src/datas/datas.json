@@ -1,5 +1,76 @@
 {
-	"pages" : [
+	"menu":{
+		"joli":{
+			"img":"./src/images/joli.jpg",
+			"alt":"joli.",
+			"version":"v0.0.1"
+		},
+		"nav_items":[
+			{
+				"id":"following",
+				"link":"#"
+			},
+			{
+				"id":"discover",
+				"link":"#"
+			},
+			{
+				"id":"about",
+				"link":"#"
+			},
+			{
+				"id":"f.a.q",
+				"link":"#"
+			}
+		],
+		"id":"cunt"
+	},
+	"content":{
+		"player":{
+			"img":"./src/images/cover.jpg"
+		},
+		"tracks":[
+			{
+				"id":"0000000001",
+				"name":"look good",
+				"cover":"./src/images/track-cover-0000000001.jpg",
+				"artist-id":"0000000100",
+				"artist-name":"monolth"
+			},
+			{
+				"id":"0000000001",
+				"name":"look good",
+				"cover":"./src/images/track-cover-0000000002.jpg",
+				"artist-id":"0000000100",
+				"artist-name":"monolth"
+			},
+			{
+				"id":"0000000001",
+				"name":"look good",
+				"cover":"./src/images/track-cover-0000000003.jpg",
+				"artist-id":"0000000100",
+				"artist-name":"monolth"
+			},
+			{
+				"id":"0000000001",
+				"name":"look good",
+				"cover":"./src/images/track-cover-0000000004.jpg",
+				"artist-id":"0000000100",
+				"artist-name":"monolth"
+			},
+			{
+				"id":"0000000001",
+				"name":"look good",
+				"cover":"./src/images/track-cover-0000000005.jpg",
+				"artist-id":"0000000100",
+				"artist-name":"monolth"
+			}
+		]
+	},
+	"side":{
+
+	},
+	"pages":[
 		{
 			"id":"homepage",
 			"title":"Hello Noah,",
@@ -14,13 +85,13 @@
 			"txt":"this is another page!"
 		}
 	],
-	"nav" : {
+	"nav":{
 
 	},
-	"footer" : {
+	"footer":{
 
 	},
-	"other" : {
+	"other":{
 
 	}
 }
